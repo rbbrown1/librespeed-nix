@@ -1,0 +1,95 @@
+{
+  "nodes": {
+    "backend-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760982727,
+        "narHash": "sha256-8XlAUh/EQ+C1+plzbApO9Quq7MYoaNNGzKM0hfxOaUE=",
+        "owner": "librespeed",
+        "repo": "speedtest-rust",
+        "rev": "f5345b414eb3492dff710030ec2f32c7a93be62e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "librespeed",
+        "repo": "speedtest-rust",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "frontend-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760780239,
+        "narHash": "sha256-xiSGW1Agc3OXYB/xwwHiND5P0+9W3aQcJlekthQxPK4=",
+        "owner": "librespeed",
+        "repo": "speedtest",
+        "rev": "4458c6994023f2ea35a4c10c8138e5f3d4b39516",
+        "type": "github"
+      },
+      "original": {
+        "owner": "librespeed",
+        "repo": "speedtest",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1760878510,
+        "narHash": "sha256-K5Osef2qexezUfs0alLvZ7nQFTGS9DL2oTVsIXsqLgs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "5e2a59a5b1a82f89f2c7e598302a9cacebb72a67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "backend-src": "backend-src",
+        "flake-utils": "flake-utils",
+        "frontend-src": "frontend-src",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
